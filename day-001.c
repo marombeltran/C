@@ -85,4 +85,48 @@
  * or let the compiler use the default type based on the value of the constant.
  */
 
+/* 1.3.1 Integer Constants
+ * --------------------------------------------------------------------------------------------
+ * If the sequence of digits is preceded by 0x or 0X (zero x or zero X), then the constant is
+ * considered to be hexadecimal (base 16). Hexadecimal values may use the digits from 0 to
+ * 9, as well as the letters a to f and A to F. Here are some examples:
+ */
+        0x2f
+        0x88
+        0xAB43
+        0xAbCd
+        0x1
 
+/* If the first digit is 0 (zero), and the next character is not ‘x’ or ‘X’, then the constant is
+ * considered to be octal (base 8). Octal values may only use the digits from 0 to 7; 8 and 9
+ * are not allowed. Here are some examples:
+ */
+        057
+        012
+        03
+        0241
+
+/* In all other cases, the sequence of digits is assumed to be decimal (base 10). Decimal
+ * values may use the digits from 0 to 9. Here are some examples:
+ */
+        459
+        23901
+        8
+        12
+
+/* There are various integer data types, for short integers, long integers, signed integers,
+ * and unsigned integers. You can force an integer constant to be of a long and/or unsigned
+ * integer type by appending a sequence of one or more letters to the end of the constant:
+ */ 
+        u
+        U       // Unsigned integer type.
+        l
+        L       // Long integer type.
+
+/* For example, 45U is an unsigned int constant. You can also combine letters: 45UL is
+ * an unsigned long int constant. (The letters may be used in any order.)
+
+ * Both ISO C99 and GNU C extensions add the integer types long long int and unsigned
+ * long long int. You can use two ‘L’s to get a long long int constant; add a ‘U’ to that
+ * and you have an unsigned long long int constant. For example: 45ULL.
+ */
