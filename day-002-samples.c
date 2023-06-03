@@ -81,10 +81,10 @@ main (int argc, char *argv[])
     * and unsigned integers. You can force an integer constant to be of a long and/or unsigned
     * integer type by appending a sequence of one or more letters to the end of the constant:
     */ 
-           u
-           U       // Unsigned integer type.
-           l
-           L       // Long integer type.
+           12u;
+           12U;       // Unsigned integer type.
+           12l;
+           12L;       // Long integer type.
 
    /* For example, 45U is an unsigned int constant. You can also combine letters: 45UL is
     * an unsigned long int constant. (The letters may be used in any order.)
