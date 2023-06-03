@@ -33,12 +33,23 @@ main (int argc, char *argv[])
     */
    char str[50];
 
+   // Hex
    sprintf(str, "0x2f ->  %d\n0x88 -> %d", 0x2f, 0x88);
         0x2f;
         0x88;
         0xAB43;
         0xAbCd;
         0x1;
+
+   puts (str);
+
+
+   // Hex
+   sprintf(str, "057 ->  %d\n012 -> %d", 057, 012);
+        057;
+        012;
+        03;
+        0241;
 
    puts (str);
 
