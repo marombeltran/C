@@ -1,4 +1,4 @@
-/* day-001-samples -- source code for 
+/* day-001-samples -- source code for day-001.c
  * 2023 Free Software Foundation, Inc.
  */ 
 
@@ -14,7 +14,8 @@ main (int argc, char *argv[])
     //  • The first character of an identifier cannot be a digit.
        /* int 0foo; // error: invalid suffix "foo" on integer constant */
 
-    //  • Lowercase letter and uppercase letters are distinct, such that foo and FOO are two
+    //  • Lowercase letter and uppercase letters are distinct, such that foo and FOO 
+   //     are two diferente variables (names).
     
     int baz, BAZ, baZ, Baz;
     baz = 12;

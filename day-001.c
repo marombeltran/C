@@ -87,6 +87,7 @@
 
 /* 1.3.1 Integer Constants
  * --------------------------------------------------------------------------------------------
+ *  An integer constant is a sequence of digits, with an optional prefix to denote a number base.
  * If the sequence of digits is preceded by 0x or 0X (zero x or zero X), then the constant is
  * considered to be hexadecimal (base 16). Hexadecimal values may use the digits from 0 to
  * 9, as well as the letters a to f and A to F. Here are some examples:
