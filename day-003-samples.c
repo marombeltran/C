@@ -5,9 +5,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#define min(X, Y) \
+({ typeof (X) x_ = (X); \
+    typeof (Y) y_ = (Y); \
+    (x_ < y_) ? x_ : y_; })
+
 int
 main (int argc, char *argv[])
 {
+    printf ("min -> %d\n", min(3, 7));
+
     /* 1.3.2 Character Constants
      * A character constant is usually a single character enclosed within single quotation marks,
      * such as ’Q’. A character constant is of type int by default.
