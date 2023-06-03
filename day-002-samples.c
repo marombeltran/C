@@ -44,7 +44,7 @@ main (int argc, char *argv[])
    puts (str);
 
 
-   // Hex
+   // Oct
    sprintf(str, "057 ->  %d\n012 -> %d", 057, 012);
         057;
         012;
