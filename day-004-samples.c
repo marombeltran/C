@@ -60,6 +60,7 @@ main (int argc, char *argv[])
 
       w = .77F;
       z = .50001l;
+
       sprintf (str, "w bytes [%ld] -> %.2f\nz bytes [%ld] -> %.2f", sizeof(w), w, sizeof(z), z);
 
       puts (str);
