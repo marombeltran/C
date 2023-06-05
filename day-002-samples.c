@@ -1,4 +1,4 @@
-/* day-002-samples -- source code for day-001.c
+/* day-002-samples -- source code for day-002
  * 2023 Free Software Foundation, Inc.
  */ 
 
@@ -49,7 +49,7 @@ main (int argc, char *argv[])
    char str[50];
 
    // Hex
-   sprintf(str, "0x2f ->  %d\n0x88 -> %d", 0x2f, 0x88);
+   sprintf (str, "0x2f ->  %d\n0x88 -> %d", 0x2f, 0x88);
         0x2f;
         0x88;
         0xAB43;
@@ -63,7 +63,7 @@ main (int argc, char *argv[])
     */
 
    // Oct
-   sprintf(str, "057 ->  %d\n012 -> %d", 057, 012);
+   sprintf (str, "057 ->  %d\n012 -> %d", 057, 012);
         057;
         012;
         03;
