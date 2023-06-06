@@ -6,6 +6,17 @@
 #include <stdlib.h>
 
 int
+_strlen (char s[])
+{
+   int i = 0;
+
+   while (s[i] != '\0')
+      i++;
+
+   return i;
+}
+
+int
 main (int argc, char *argv[])
 {
    /* 1.3.3 Real Number Constants
@@ -65,7 +76,32 @@ main (int argc, char *argv[])
 
       puts (str);
 
+   /* A string constant is a sequence of zero or more characters, digits, and escape sequences
+    * enclosed within double quotation marks. A string constant is of type “array of characters”.
+    */
+
+      ""; // zero characters
+      "032323"; // digits
+      "\n\t new line follows by one horizontal tabulation"; // escape sequences
+      "A....z"; // A string constant if of type "array of characters"
+
+    /* All string constants contain a null termination character (\0) as their last character. Strings
+    * are stored as arrays of characters, with no inherent size attribute. The null termination
+    * character lets string-processing functions know where the string ends.
+    */
       
+      char arr_str[] = {'h', 'i', '\0'};
+      
+      printf ("{'h', 'i', '\\0'} -> %s, length (%d)\n", arr_str, _strlen (arr_str));
+
+   /* Adjacent string constants are concatenated (combined) into one string, with the null
+    * termination character added to the end of the final concatenated string.
+    */
+
+      char a_str[] = {'h', 'i'};
+      
+      printf ("{'h', 'i'} -> %s, length (%d)\n", a_str, _strlen (a_str));
+ 
       
    exit (EXIT_SUCCESS);
 }
