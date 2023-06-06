@@ -30,8 +30,7 @@
 /* 1. Lexical Elements ( .. that make up C source code after preprocesing).
  * --------------------------------------------------------------------------------------------
  * These elements are called tokens. There are five types of tokens: keywords, identifiers,
- * constants, operators, and separators. White space, sometimes required to separate tokens,
- * is also described in this chapter.
+ * constants, operators, and separators. White space, sometimes required to separate tokens.
  */
 
 #include <stdio.h>

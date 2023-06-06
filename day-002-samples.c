@@ -29,9 +29,10 @@ main (int argc, char *argv[])
    
    /* 1.3 Constants
     * --------------------------------------------------------------------------------------------
-    * A constant is a literal numeric or character value, such as 5 or ’m’. All constants are of a
-    * particular data type; you can use type casting to explicitly specify the type of a constant,
-    * or let the compiler use the default type based on the value of the constant.
+    * • A constant is a literal numeric or character value, such as 5 or ’m’. 
+    * • All constants are of a particular data type; you can use type casting to explicitly specify 
+    * the type of a constant, or let the compiler use the default type based on the value of 
+    * the constant.
     */
 
    /* 1.3.1 Integer Constants
