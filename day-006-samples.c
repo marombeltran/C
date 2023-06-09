@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>
+#include <stdbool.h> // import this to use `true` and `false`
 
 int
 main (int argc, char *argv[])
@@ -13,34 +13,37 @@ main (int argc, char *argv[])
     * The characters used for operators in C are !~^&|%+-=<>,.?:
     */
 
-   bool a = true;
+      bool a = true;
    /* Logical operators */
-   ! a; // Not operator
+      ! a; // Not operator
 
-   a && a; // And operator
-   a || a; // Or operator
+      a && a; // And operator
+      a || a; // Or operator
 
 
-   int b = 11;
+      int b = 11;
    // Arithmetic operators
-   b + b;
-   b - b;
-   b * b;
-   b / b;
-   b % b;
+      b + b;
+      b - b;
+      b * b;
+      b / b;
+      b % b;
 
    // Bitwise operators: bitwise operators allow you to perform operations on individual bits 
    // of integer values.
-   b & b;
-   b | b;
-   b ^ b; // xor operator
-   b << 1; // Shift left
-   b >> 1; // Shift right 
-   ~b; // not b
+      b & b;
+      b | b;
+      b ^ b; // xor operator
+      b << 1; // Shift left
+      b >> 1; // Shift right 
+      ~b; // not b
 
    /* • Some operators are a single character. For instance, ‘-’ is the operator for negation (with
     * one operand) and the operator for subtraction (with two operands).
     */ 
+
+      // operator for negation
+      -b; // if b was 10, then will be -10
 
    /* • Some operators are two characters. For example, ‘++’ is the increment operator. Recogni-
     * tion of multicharacter operators works by grouping together as many consecutive characters
@@ -53,18 +56,23 @@ main (int argc, char *argv[])
     * be part of a valid C program and the former could not (since a++ is not an lvalue and thus
     * can’t be the operand of ++).
     */
+      b++; // equal to (b, b +1, b)
+      ++b; // equal to (b +1, b)
 
    /* • A few C operators are keywords rather than special characters. They include sizeof and _Alignof.
     * Parentheses are also required around the operand of the operator keywords sizeof and
     * _Alignof when the operand is a data type rather than a value.
     */
 
+      sizeof(b); // It shows the length of b in bytes.
+
    /* 5.6 Punctuation
     * The characters ‘;{}[]()’ are used for punctuation and grouping. Semicolon (‘;’) ends a
     * statement. Braces (‘{’ and ‘}’) begin and end a block at the statement level and surround the initializer
     * for a variable with multiple elements or fields (such as arrays or structures).
-    *
-    * Square brackets (‘[’ and ‘]’) do array indexing, as in array[5].
+    */
+
+    /* • Square brackets (‘[’ and ‘]’) do array indexing, as in array[5].
     *
     * Parentheses are used in expressions for explicit nesting of expressions
     * around the parameter declarations in a function declaration or
