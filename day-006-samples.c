@@ -4,19 +4,45 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 int
 main (int argc, char *argv[])
 {
-   /* Most operators in C consist of one or two characters that can’t be used in identifiers.
-    * The characters used for operators in C are ‘!~^&|*/%+-=<>,.?:’.
+   /* • Most operators in C consist of one or two characters that can’t be used in identifiers.
+    * The characters used for operators in C are !~^&|%+-=<>,.?:
     */
 
-   /* Some operators are a single character. For instance, ‘-’ is the operator for negation (with
+   bool a = true;
+   /* Logical operators */
+   ! a; // Not operator
+
+   a && a; // And operator
+   a || a; // Or operator
+
+
+   int b = 11;
+   // Arithmetic operators
+   b + b;
+   b - b;
+   b * b;
+   b / b;
+   b % b;
+
+   // Bitwise operators: bitwise operators allow you to perform operations on individual bits 
+   // of integer values.
+   b & b;
+   b | b;
+   b ^ b; // xor operator
+   b << 1; // Shift left
+   b >> 1; // Shift right 
+   ~b; // not b
+
+   /* • Some operators are a single character. For instance, ‘-’ is the operator for negation (with
     * one operand) and the operator for subtraction (with two operands).
     */ 
 
-   /* Some operators are two characters. For example, ‘++’ is the increment operator. Recogni-
+   /* • Some operators are two characters. For example, ‘++’ is the increment operator. Recogni-
     * tion of multicharacter operators works by grouping together as many consecutive characters
     * as can constitute one operator.
     *
@@ -28,7 +54,7 @@ main (int argc, char *argv[])
     * can’t be the operand of ++).
     */
 
-   /* A few C operators are keywords rather than special characters. They include sizeof and _Alignof.
+   /* • A few C operators are keywords rather than special characters. They include sizeof and _Alignof.
     * Parentheses are also required around the operand of the operator keywords sizeof and
     * _Alignof when the operand is a data type rather than a value.
     */
