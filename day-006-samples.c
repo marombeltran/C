@@ -72,9 +72,17 @@ main (int argc, char *argv[])
     * for a variable with multiple elements or fields (such as arrays or structures).
     */
 
-    /* • Square brackets (‘[’ and ‘]’) do array indexing, as in array[5].
-    *
-    * Parentheses are used in expressions for explicit nesting of expressions
+      { // code block
+         ; // ends a statement
+      }
+
+   /* • Square brackets (‘[’ and ‘]’) do array indexing, as in array[5]. */
+
+      char str[] = {'m', 'a', 'r', 'o', 'm', '\0'};
+
+      str[2]; // 'r'
+
+   /* Parentheses are used in expressions for explicit nesting of expressions
     * around the parameter declarations in a function declaration or
     * definition, and around the arguments in a function call, as in printf ("Foo %d\n", i).
     *
@@ -82,6 +90,9 @@ main (int argc, char *argv[])
     * part of their syntax—for instance, if statements, for statements, while statements, and
     * switch statements.
     */
+
+      (b + b * (b - b));
+      sizeof (b); // using parentheses to pass an argument
 
       // -a + b - c + d * e / f;
 
