@@ -47,6 +47,10 @@ main (int argc, char *argv[])
             ++
                 ;
 
+    // ...
+        int z = 1;
+        // x++ ++ +z;
+
     exit (EXIT_SUCCESS);
  }
  
