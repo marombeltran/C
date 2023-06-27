@@ -6,6 +6,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
+#include <stdbool.h>
 
 int
 duplicate (int x)
@@ -37,7 +38,7 @@ main (int argc, char *argv[])
          {
             printf ("x is less than or equal to -> %d\n", x); // function call statement
          }
-         else // statement
+         else // conditional statement
             puts ("i will never show myself");
       }
 
@@ -45,6 +46,29 @@ main (int argc, char *argv[])
     */
 
       printf ("function call statement -> %d\n", duplicate(x));
+
+   // some conditional statements
+   // secuencials
+      while (false); // might need a block
+      for (;x > 10;); // might need a block
+      do { /* something */ } while(false);
+
+   // simples
+      if (false)
+         ;
+      else
+         ;
+
+      switch (1) {
+         case 2: // some stupid things
+         ;
+         default:
+         ;
+      }
+      
+
+   /* pure function? 
+    */
 
    exit (EXIT_SUCCESS);
 }
