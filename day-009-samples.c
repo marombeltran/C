@@ -28,8 +28,36 @@ main (int argc, char *argv[])
     * Innermost expressions are evaluated first.
     */
 
-      printf ("INT MAX -> %d", INT_MAX);
+      int x = INT_MAX;
+      float y = LONG_MAX;
+      // double z = DOUBLE_MAX; this shows an error becaues this constant doesn't exists
 
+      printf ("INT MAX -> %d\n", x);
+      printf ("FLOAT MAX -> %f\n", y);
+
+   /* There are five types of tokens: keywords, identifiers,
+    * constants, operators, and separators. White space, sometimes required to separate tokens.
+    */
+
+      "";
+      ' ';
+      "\t";
+      12UL;
+      323ULL;
+
+   // separators
+      puts ("\n");
+
+   // puts ( 12ULL + 12L + 0xAAA ); // Shows an error: because the argument should be a 'const char *'
+
+      char str[50];
+
+   // use the most long type in the expression Long Long
+      sprintf (str, "12ULL + 12L + 0xAAA -> %lld", 12ULL + 12L + 0xAAA);
+
+
+      puts (str);
+      
    /* 4 Statements
     * You write statements to cause actions and to control flow within your programs. You can
     * also write statements that do not do anything at all, or do things that are uselessly trivial.
