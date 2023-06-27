@@ -4,6 +4,14 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+
+int
+duplicate (int x)
+{
+   return 2 * x; // return statement
+}
 
 int
 main (int argc, char *argv[])
@@ -27,7 +35,7 @@ main (int argc, char *argv[])
 
          // block statement 
          {
-            printf ("x is less than or equal to -> %d\n", x); // call function statement
+            printf ("x is less than or equal to -> %d\n", x); // function call statement
          }
          else // statement
             puts ("i will never show myself");
@@ -36,6 +44,7 @@ main (int argc, char *argv[])
    /* They do not produce a value themselves but instead perform actions or cause side effects.
     */
 
+      printf ("function call statement -> %d\n", duplicate(x));
 
    exit (EXIT_SUCCESS);
 }
