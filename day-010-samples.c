@@ -53,7 +53,7 @@ main (int argc, char *argv[])
          /* something */ 
       } while(false);
 
-   // simples statements
+   // conditional statements
       if (false) // it might need a block
          ;
       else if (false || true)
