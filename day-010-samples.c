@@ -38,7 +38,7 @@ main (int argc, char *argv[])
          {
             printf ("x is less than or equal to -> %d\n", x); // function call statement
          }
-         else // conditional statement
+         else // else conditional statement
             puts ("i will never show myself");
       }
 
@@ -47,14 +47,17 @@ main (int argc, char *argv[])
 
       printf ("function call statement -> %d\n", duplicate(x));
 
-   // some conditional statements
-   // secuencials
-      while (false); // might need a block
-      for (;x > 10;); // might need a block
-      do { /* something */ } while(false);
+   // loop statements 
+      while (false); // it might need a block
+      for (; x > 10 ;); // it might need a block
+      do { 
+         /* something */ 
+      } while(false);
 
-   // simples
-      if (false)
+   // simples statements
+      if (false) // it might need a block
+         ;
+      else if (false || true)
          ;
       else
          ;
@@ -62,10 +65,23 @@ main (int argc, char *argv[])
       switch (1) {
          case 2: // some stupid things
          ;
+         break;
          default:
+            // some statement
          ;
       }
-      
+
+   // don't do that if you don't know what it's about
+   _a:
+      puts ("this is another looop");
+
+      if (x < 15)
+         x++; // increment statement
+
+      else goto _b;
+   goto _a;
+
+   _b:
 
    /* pure function? 
     */
