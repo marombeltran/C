@@ -4,7 +4,6 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 #include <string.h>
 #include <stdbool.h>
 
@@ -82,6 +81,11 @@ main (int argc, char *argv[])
    goto _a;
 
    _b:
+
+   // There is a statement that is the most basic instruction in a C program.
+      ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+      ;
+      ; // Don't forget it at the end of a compound statement
 
    /* pure function? 
     */
