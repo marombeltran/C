@@ -4,7 +4,6 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #include <stdbool.h>
 
 int
@@ -71,16 +70,16 @@ main (int argc, char *argv[])
       }
 
    // don't do that if you don't know what it's about
-   _a:
-      puts ("this is another looop");
+       _a:
+          puts ("this is another looop");
 
-      if (x < 15)
-         x++; // increment statement
+          if (x < 15)
+             x++; // increment statement
 
-      else goto _b;
-   goto _a;
+          else goto _b;
+       goto _a;
 
-   _b:
+       _b:
 
    // There is a statement that is the most basic instruction in a C program.
       ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
