@@ -10,19 +10,29 @@ int
 main (int argc, char *argv[])
 {
 
-   /* Derived Data types
-    * --------------------------------------------------------------------------------------------
-    *
-    */
-   // Enumerations
+   /* Derived Data types (overview) */
 
-   // Unions
+   // • Enumerations
+   // --------------------------------------------------------------------------------------------
+   // An enumeration is a custom data type used for storing constant integer values and referring
+   // to them by names. By default, these values are of type signed int; however, you can use
+   // the -fshort-enums GCC compiler option to cause the smallest possible integer type to be
+   // used instead. Both of these behaviors conform to the C89 standard, but mixing the use of
+   // these options within the same program can produce incompatibilities.
       
-   // Structures
+      enum fruit {grape, cherry, lemon, kiwi};
 
-   // Arrays
+      // puts ();
 
-   // Pointers
+   // • Unions
+      
+   // • Structures
+
+   // • Arrays
+
+   // • Pointers
+
+   // • Typedefs
 
 
    /* Compilation system
