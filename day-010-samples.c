@@ -45,7 +45,13 @@ main (int argc, char *argv[])
 
       printf ("function call statement -> %d\n", duplicate(x));
 
-   // loop statements 
+   /* Loop statements 
+    *  --------------------------------------------------------------------------------------------
+    * A loop consists of a statement or block, called the loop
+    * body, that is executed several times, depending on a given
+    * condition.
+    */
+
       while (false); // it might need a block
       for (; x > 10 ;); // it might need a block
       do { 
@@ -68,6 +74,12 @@ main (int argc, char *argv[])
             // some statement
          ;
       }
+
+   // Unconditional jumps
+      goto;
+      continue;
+      break;
+      return;
 
    // don't do that if you don't know what it's about
        _a:

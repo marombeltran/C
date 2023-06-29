@@ -26,7 +26,7 @@ main (int argc, char *argv[])
 
    // • Unions
       
-   // • Structures
+   // • Structures, Bit-Fields
 
    // • Arrays
 
