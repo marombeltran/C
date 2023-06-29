@@ -9,16 +9,35 @@
 int
 main (int argc, char *argv[])
 {
+
+   /* Derived Data types
+    * --------------------------------------------------------------------------------------------
+    *
+    */
+   // Enumerations
+
+   // Unions
+      
+   // Structures
+
+   // Arrays
+
+   // Pointers
+
+
    /* Compilation system
     * --------------------------------------------------------------------------------------------
     */
-   // unix> gcc -o hello hello.c
+   // unix> gcc -o day-011-samples day-011-samples.c
 
-   // hello.c > Pre-processor (cpp)  >  hello.i   > Compiler (cc1) >    hello.s   > Assembler (as) >    hello.o     > Linker (ld) >    hello    >
-   // Source    ___________________     Modified    ______________     Assembly     ______________    Relocatable     ___________    Executable
-   // program                            source                         program                          object                        Object
-   // (text)                             (text)                          (text)                         programs                       program
-   //                                                                                                    (text)                        (binary)
+   // day-011-samples.c > Pre-processor (cpp)  >  day-011-samples.i   > Compiler (cc1) >    day-011-samples.s   > Assembler (as) >    day-011-samples.o     > Linker (ld) >    day-011-samples    >
+   //     Source          ___________________         Modified          ______________          Assembly          ______________         Relocatable           ___________        Executable
+   //    program                                       source                                   program                                    object                                   Object
+   //    (text)                                        (text)                                    (text)                                   programs                                 program
+   //                                                                                                                                      (text)                                  (binary)
+
+   // run the 
+   // unix> ./day-011-samples
 
    exit (EXIT_SUCCESS);
 }
