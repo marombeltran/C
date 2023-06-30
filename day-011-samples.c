@@ -20,11 +20,39 @@ main (int argc, char *argv[])
    // used instead. Both of these behaviors conform to the C89 standard, but mixing the use of
    // these options within the same program can produce incompatibilities.
       
-      enum fruit {grape, cherry, lemon, kiwi};
+   /* Enumeration types are used to define variables that can only be assigned certain discrete integer values
+    * throughout the program. The possible values and names for them are defined in an enumeration.
+    */
+      enum toggle { OFF, ON, NO = 0, YES };
 
-      // puts ();
+   /* The value of each identifier in the list may be determined explicitly, as in NO = 0 in the example above.
+    * Identifiers for which no explicit value is specified are assigned a value automatically based on their position in the
+    * list, as follows
+    */
+
+   // .. in the example above, the constants OFF and NO have the value 0, while ON and YES have the value 1
+
+      enum toggle t1 = OFF;
+      enum toggle t2 = ON;
+      enum toggle t3 = NO;
+      enum toggle t4 = YES;
+
+      char str[50];
+
+      sprintf (str, "t1 = OFF -> %d", t1);
+      puts ( str );
+      sprintf (str, "t2 = ON -> %d", t2);
+      puts ( str );
+      sprintf (str, "t3 = NO -> %d", t3);
+      puts ( str );
+      sprintf (str, "t4 = YES -> %d", t4);
+      puts ( str );
 
    // • Unions
+   /* A union is a user-defined data type that allows storing different types of data in the same memory location.
+    * Unlike structures, which allocate memory for each member independently, a union shares a single 
+    * memory block among all its members.
+    */
       
    // • Structures, Bit-Fields
 
