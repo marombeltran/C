@@ -4,6 +4,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <stdbool.h>
 
 int
@@ -55,13 +56,19 @@ main (int argc, char *argv[])
     */
       
    // • Structures, Bit-Fields
+      struct article {
+         char name[40];
+         int quantity;
+         double price;
+      };
 
-   // • Arrays
+      struct article a1;
+      strcpy(a1.name, "C Pocket Reference");
+      a1.quantity = 7;
+      a1.price = 34.34;
 
-   // • Pointers
-
-   // • Typedefs
-
+      puts (a1.name);
+      printf ("quantity: %d, price: %f\n", a1.quantity, a1.price);
 
    /* Compilation system
     * --------------------------------------------------------------------------------------------

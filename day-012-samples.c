@@ -10,5 +10,11 @@ int
 main (int argc, char *argv[])
 {
 
+   // • Arrays
+
+   // • Pointers
+
+   // • Typedefs
+
    exit (EXIT_SUCCESS);
 }
