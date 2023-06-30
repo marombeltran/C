@@ -40,8 +40,7 @@ main (int argc, char *argv[])
 
    // • Typedefs
    /* The keyword typedef is used to give a type a new name.
-    *
-    *
+    * The same declaration without thetypedef keyword would declare a variable and not a type name.
     */
 
       typedef unsigned char UCHAR;
