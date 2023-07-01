@@ -10,5 +10,9 @@ int
 main (int argc, char *argv[])
 {
 
+   /* Examples and challenges using enumerations.
+    * --------------------------------------------------------------------------------------------
+    */
+
    exit (EXIT_SUCCESS);
 }
