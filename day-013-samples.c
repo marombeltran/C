@@ -9,6 +9,11 @@
 int
 main (int argc, char *argv[])
  {
+   /* Methods to create new data types in C:
+    * - struct, unioun
+    * - typedef
+    * - enum 
+    */
 
    /* Examples and challenges using enumerations.
     * --------------------------------------------------------------------------------------------
