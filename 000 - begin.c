@@ -33,6 +33,12 @@
 int
 main (int argc, char *argv[])
 {
+    char cstr[14] = { '\0' };
+    char *pstr = "Hello world!\n";
+
+    sprintf (cstr, "Hello world!\n");
+    puts (cstr);
+    puts (pstr);
 
     exit (EXIT_SUCCESS);
 }
