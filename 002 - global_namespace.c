@@ -21,6 +21,14 @@ _strlen (char s[])
 int
 main (int argc, char *argv[])
 {
+
+    /* In C, the term "global namespace" refers to the scope where global variables, functions, and constants 
+     * are defined and accessible throughout the entire program. When you declare a variable or define a 
+     * function outside of any functions or blocks, it becomes part of the global namespace.
+     *
+     *
+     *
+     */
     printf ("min -> %d\n", min(3, 7)); 
 
    exit (EXIT_SUCCESS);
